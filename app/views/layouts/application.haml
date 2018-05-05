@@ -37,6 +37,25 @@
     %meta{'http-equiv': "x-ua-compatible", content: "ie=edge, chrome=1"}
     -# Analytics
     = render :partial => 'layouts/google_analytics'
+    -# og tags Facebook
+    %meta{ property: "fb:admins", content: "904862066288762" }
+    %meta{ property: "og:description", content: "𝖱𝗎𝖻𝗒 𝗈𝗇 𝖱𝖺𝗂𝗅𝗌 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 𝗍𝗋𝗒𝗂𝗇𝗀 𝗍𝗈 𝗁𝖾𝗅𝗉 𝗉𝖾𝗈𝗉𝗅𝖾 𝗈𝗇𝖾 𝖼𝗈𝖽𝖾 𝗅𝗂𝗇𝖾 𝖺𝗍 𝖺 𝗍𝗂𝗆𝖾." }
+    %meta{ property: "og:title", content: "Luis Osnet" }
+    %meta{ property: "og:type", content: "website" }
+    %meta{ property: "og:url", content: "luisosnet.com" }
+    %meta{ property: "og:image", content: "" }
+    %meta{ property: "og:site_name", content: "luisosnet.com" }
+    -# og tags Google+
+    %meta{ itemprop: "description", content: "" }
+    -# Twitter Cards
+    %meta{ property: "twitter:account_id", content: "1238060450" }
+    %meta{ name: "twitter:card", content: "summary_large_image" }
+    %meta{ name: "twitter:site", content: "@LuisOsnet" }
+    %meta{ name: "twitter:title", content: "Luis Osnet" }
+    %meta{ name: "twitter:description", content: "𝖱𝗎𝖻𝗒 𝗈𝗇 𝖱𝖺𝗂𝗅𝗌 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 𝗍𝗋𝗒𝗂𝗇𝗀 𝗍𝗈 𝗁𝖾𝗅𝗉 𝗉𝖾𝗈𝗉𝗅𝖾 𝗈𝗇𝖾 𝖼𝗈𝖽𝖾 𝗅𝗂𝗇𝖾 𝖺𝗍 𝖺 𝗍𝗂𝗆𝖾."  }
+    %meta{ name: "twitter:creator", content: "@LuisOsnet" }
+    %meta{ name: "twitter:image:src", content: "" }
+    %meta{ name: "twitter:domain", content: "luisosnet.com" }
     -# Fonts
     %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet"}
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
