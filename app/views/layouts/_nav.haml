@@ -1,0 +1,18 @@
+%nav
+  .container
+    .image-container
+      = image_tag "luisosnet.png", alt: "Luis Osnet", class: "logo"
+    .button-container
+      %button.mobile-button
+    .list-container
+      %ul
+        %li
+        = link_to "Inicio", class: "link"
+        %li
+          = link_to "Editar perfil", class: "link"
+        %li
+          = link_to "Cerrar Sesion", method: :delete, class: "link"
+        %li
+          = link_to "Ingresar", class: "link"
+        %li
+          = link_to "Registrarse", class: "link"
