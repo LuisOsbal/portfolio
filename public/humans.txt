@@ -1,0 +1,13 @@
+/* TEAM */
+	Author: Luis Osnaya
+	Contact: hola[at]luisosnet.com
+	Twitter: LuisOsnet
+	Facebook: LuisOsnet
+	Medium: LuisOsnet
+	From: Mexico City
+
+/* SITE */
+	Last update: 2018/05/05
+	Standards: HTML5, CSS3, Ruby on Rails
+	Components: jQuery
+	Software: Atom
