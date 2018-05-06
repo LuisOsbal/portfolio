@@ -40,24 +40,23 @@ gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'rails-i18n', '~> 5.0', '>= 5.0.4'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'awesome_print', require: 'ap'
   gem 'better_errors'
   gem 'binding_of_caller', '~> 0.7.2'
+  gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot'
+  gem 'guard-rubocop'
+  gem 'guard-rubycritic'
   gem 'irbtools', require: 'irbtools/binding'
   gem 'meta_request'
   gem 'pry-rails', group: :development
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'rubocop', require: false
-  gem 'guard-rubocop'
-  gem "guard-rubycritic"
-  gem 'simplecov', require: false, group: :test
+  # gem 'rack-mini-profiler'
   gem 'rails-perftest'
+  gem 'rspec-rails'
+  gem 'rubocop', require: false
   gem 'ruby-prof'
-  gem 'rack-mini-profiler'
+  gem 'shoulda-matchers'
+  gem 'simplecov', require: false, group: :test
   # For memory profiling
   gem 'memory_profiler'
   # For call-stack profiling flamegraphs
@@ -83,4 +82,4 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

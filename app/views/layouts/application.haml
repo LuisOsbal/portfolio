@@ -3,7 +3,7 @@
   %head
     -# Basic Needs
     %meta{charset: "utf-8"}
-    %title Luis Osnet
+    %title= t('title')
     %meta{ name: "description", content: "Ruby on Rails developer" }
     %meta{ name: "author", content: "Luis Osnet" }
     -# Humans
@@ -25,7 +25,7 @@
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-96x96.png", sizes: "96x96" }
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-32x32.png", sizes: "32x32" }
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-16x16.png", sizes: "16x16" }
-    %meta{name: "application-name", content: "Luis Osnet"}
+    %meta{ name: "application-name", content: "Luis Osnet" }
     %meta{ name: "msapplication-TileColor", content: "#FFFFFF" }
     %meta{ name: "msapplication-square310x310logo", content: "mstile-310x310.png" }
     %meta{ name: "msapplication-wide310x150logo", content: "mstile-310x150.png" }
@@ -33,35 +33,36 @@
     %meta{ name: "msapplication-TileImage", content: "mstile-144x144.png" }
     %meta{ name: "msapplication-square70x70logo", content: "mstile-70x70.png" }
     -# Mobile Specific Metas
-    %meta{name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1"}
-    %meta{'http-equiv': "x-ua-compatible", content: "ie=edge, chrome=1"}
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
+    %meta{ 'http-equiv': "x-ua-compatible", content: "ie=edge, chrome=1" }
     -# Analytics
     = render :partial => 'layouts/google_analytics'
     -# og tags Facebook
     %meta{ property: "fb:admins", content: "904862066288762" }
-    %meta{ property: "og:description", content: "𝖱𝗎𝖻𝗒 𝗈𝗇 𝖱𝖺𝗂𝗅𝗌 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 𝗍𝗋𝗒𝗂𝗇𝗀 𝗍𝗈 𝗁𝖾𝗅𝗉 𝗉𝖾𝗈𝗉𝗅𝖾 𝗈𝗇𝖾 𝖼𝗈𝖽𝖾 𝗅𝗂𝗇𝖾 𝖺𝗍 𝖺 𝗍𝗂𝗆𝖾." }
+    %meta{ property: "og:description", content: "Ruby on Rails developer trying to help people one code line at time." }
     %meta{ property: "og:title", content: "Luis Osnet" }
     %meta{ property: "og:type", content: "website" }
     %meta{ property: "og:url", content: "luisosnet.com" }
     %meta{ property: "og:image", content: "" }
     %meta{ property: "og:site_name", content: "luisosnet.com" }
-    -# og tags Google+
-    %meta{ itemprop: "description", content: "" }
     -# Twitter Cards
     %meta{ property: "twitter:account_id", content: "1238060450" }
     %meta{ name: "twitter:card", content: "summary_large_image" }
     %meta{ name: "twitter:site", content: "@LuisOsnet" }
     %meta{ name: "twitter:title", content: "Luis Osnet" }
-    %meta{ name: "twitter:description", content: "𝖱𝗎𝖻𝗒 𝗈𝗇 𝖱𝖺𝗂𝗅𝗌 𝖽𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 𝗍𝗋𝗒𝗂𝗇𝗀 𝗍𝗈 𝗁𝖾𝗅𝗉 𝗉𝖾𝗈𝗉𝗅𝖾 𝗈𝗇𝖾 𝖼𝗈𝖽𝖾 𝗅𝗂𝗇𝖾 𝖺𝗍 𝖺 𝗍𝗂𝗆𝖾."  }
+    %meta{ name: "twitter:description", content: "Ruby on Rails developer trying to help people one code line at time." }
     %meta{ name: "twitter:creator", content: "@LuisOsnet" }
     %meta{ name: "twitter:image:src", content: "" }
     %meta{ name: "twitter:domain", content: "luisosnet.com" }
+    -# og tags Google+
+    %meta{ itemprop: "name", content: "Luis Osnet" }
+    %meta{ itemprop: "description", content: "Ruby on Rails developer trying to help people one code line at time." }
+    %meta{ itemprop: "image", content: "" }
     -# Fonts
-    %link{href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet"}
+    %link{ href: "https://fonts.googleapis.com/css?family=Roboto", rel: "stylesheet" }
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
   %body
-    -# = render template: "layouts/_nav"
-
+    = render template: "layouts/_nav"
   = yield
