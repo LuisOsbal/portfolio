@@ -10,8 +10,7 @@
   #navbarExampleTransparentExample.navbar-menu
     .navbar-start
       %a= link_to t("menu.home"), "", class: "navbar-item"
-      %span.icon.has-text-primary
-        %i.fa.svg-inline--fa.fa-book.fa-w-14
+
       %a= link_to t("menu.services"), "", class: "navbar-item"
 
       %a= link_to t("menu.blog"), "", class: "navbar-item"
@@ -22,7 +21,8 @@
 
       .navbar-item.has-dropdown.is-hoverable
         %a.navbar-link
-          Idioma
+          %span.icon
+            %i.fa.fas.fa-language
         .navbar-dropdown.is-boxed
           %a= link_to t("menu.language.spanish"), { :locale=>'es' }, class: "navbar-item"
           %a= link_to t("menu.language.english"), { :locale=>'en' }, class: "navbar-item"
@@ -30,12 +30,16 @@
       .navbar-item
         .field.is-grouped
           %p.control
-            %a.bd-tw-button.button{"data-social-action" => "tweet", "data-social-network" => "Twitter", "data-social-target" => "http://localhost:4000", :href => "https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=http://localhost:4000&via=jgthms", :target => "_blank"}
+            %a.bd-tw-button.button{"data-social-action" => "tweet",
+              "data-social-network" => "Twitter",
+              "data-social-target" => "http://localhost:4000",
+              :href => "https://twitter.com/intent/tweet?text=LuisOsnet: Ruby on Rails developer trying to help people one code line at time.&hashtags=LuisOsnet&url=http://luisosnet.com",
+              :target => "_blank"}
               %span.icon
-                %i.fab.fa-twitter
-              %span= t("menu.buttons.follow-me")
+                %i.fa.fab.fa-twitter
+              %span= t("menu.buttons.share")
           %p.control
             %a.button.is-primary{}
               %span.icon
-                %i.fas.fa-download
+                %i.fa.fas.fa-download
               %span= t("menu.buttons.resume")
