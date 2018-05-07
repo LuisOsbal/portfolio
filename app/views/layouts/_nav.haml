@@ -1,5 +1,41 @@
-.header
-  %nav.navbar
-    %div.navbar-logocontainer
-      = link_to image_tag "luisosnet.png", class: 'logo'
-      %h1.isotipo= t('name')
+%nav.navbar.has-shadow.is-spaced
+  .navbar-brand
+    %a.navbar-item
+      =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
+      %h1.isotipo Luis Osnet
+    .navbar-burger.burger{"data-target" => "navbarExampleTransparentExample"}
+      %span
+      %span
+      %span
+  #navbarExampleTransparentExample.navbar-menu
+    .navbar-start
+      %a= link_to t("menu.home"), "", class: "navbar-item"
+      %span.icon.has-text-primary
+        %i.fa.svg-inline--fa.fa-book.fa-w-14
+      %a= link_to t("menu.services"), "", class: "navbar-item"
+
+      %a= link_to t("menu.blog"), "", class: "navbar-item"
+
+      %a= link_to t("menu.portfolio"), "", class: "navbar-item"
+
+      %a= link_to t("menu.contact"), "", class: "navbar-item"
+
+      .navbar-item.has-dropdown.is-hoverable
+        %a.navbar-link
+          Idioma
+        .navbar-dropdown.is-boxed
+          %a= link_to t("menu.language.spanish"), { :locale=>'es' }, class: "navbar-item"
+          %a= link_to t("menu.language.english"), { :locale=>'en' }, class: "navbar-item"
+    .navbar-end
+      .navbar-item
+        .field.is-grouped
+          %p.control
+            %a.bd-tw-button.button{"data-social-action" => "tweet", "data-social-network" => "Twitter", "data-social-target" => "http://localhost:4000", :href => "https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&hashtags=bulmaio&url=http://localhost:4000&via=jgthms", :target => "_blank"}
+              %span.icon
+                %i.fab.fa-twitter
+              %span= t("menu.buttons.follow-me")
+          %p.control
+            %a.button.is-primary{}
+              %span.icon
+                %i.fas.fa-download
+              %span= t("menu.buttons.resume")

@@ -10,7 +10,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+# gem 'sass-rails', '~> 5.0'
+gem 'bulma-rails', '~> 0.7.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -38,6 +39,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'rails-i18n', '~> 5.0', '>= 5.0.4'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'awesome_print', require: 'ap'

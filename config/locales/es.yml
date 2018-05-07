@@ -1,3 +1,17 @@
 es:
   name: "Luis Osnet"
   hello: "Hola Amigo"
+
+  # navbar
+  menu:
+    home: "Inicio"
+    services: "Servicios"
+    blog: "Blog"
+    portforlio: "Portafolio"
+    contacto: "Contacto"
+    language:
+      spanish: "Español"
+      english: "Ingles"
+    buttons:
+      follow-me: Sigueme
+      resume: Descargar CV

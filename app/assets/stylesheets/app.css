@@ -1,41 +1,16 @@
+@import "bulma";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400|Roboto');
+@import "font-awesome";
 
-%body {
-  background: #666;
-}
-
-.header {
-  width: 100%;
-  position: relative;
-  background: white;
-  display: block;
-}
-.navbar{
-  /* height: 4.5em; */
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 3;
-  background: #FFF;
-}
-.navbar-logocontainer{
-  display: inline-block;
-  margin: 0.3em 1em ;
-  -ms-display: inline-flex;
-  display: inline-flex;
-  align-items: center;
-}
-
-.logo{
-  height: 3.5em;
+.logo-brand {
+  height: 2.5em;
 }
 
 .isotipo{
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  margin: 0 .5em;
+  margin: 0 .2em;
+  font-size: 1.5em;
 }
 
 .section{

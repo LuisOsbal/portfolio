@@ -32,3 +32,17 @@
 en:
   name: "Luis Osnet"
   hello: "Hello Friend"
+
+  # navbar
+  menu:
+    home: "Home"
+    services: "Services"
+    blog: "Blog"
+    portforlio: "Portfolio"
+    contacto: "Contact"
+    language:
+      spanish: "Spanish"
+      english: "English"
+    buttons:
+      follow-me: "Follow me"
+      resume: "Download resume"
