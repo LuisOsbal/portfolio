@@ -1,7 +1,6 @@
 es:
   name: "Luis Osnet"
   hello: "Hola Amigo"
-
   # navbar
   menu:
     home: "Inicio"
