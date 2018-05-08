@@ -1,6 +1,7 @@
 en:
   name: "Luis Osnet"
-  job: "Ruby on Rails developer"
+  job: "Ruby on Rails Developer"
+  description: Ruby on Rails developer trying to help people one code line at time.
   hello: "Hello Friend"
   # navbar
   menu:
@@ -8,7 +9,7 @@ en:
     services: "Services"
     blog: "Blog"
     portforlio: "Portfolio"
-    contacto: "Contact"
+    contact: "Contact"
     language:
       spanish: "Spanish"
       english: "English"

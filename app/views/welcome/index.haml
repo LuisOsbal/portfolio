@@ -1,8 +1,6 @@
 -# %div.section
 -#   = image_tag "luisosnet.png", alt: "Luis Osnet", class: "coming_soon"
 -#   %h1.first_text= t('hello')
-
-
 .card
   .card-image
     %figure.image.is-4by3
@@ -13,10 +11,10 @@
         %figure.image.is-48x48
           %img{:alt => "Placeholder image", :src => "https://bulma.io/images/placeholders/96x96.png"}/
       .media-content
-        %p.title.is-4 Luis Osnet
+        %p.title.is-4= t('name') + ": " + t('job')
         %p.subtitle.is-6 @LuisOsnet
     .content
-      Ruby on Rails developer trying to help people one code line at time.
+      = t('description')
       = succeed "." do
         %a @LuisOsnet
       %a{:href => "#"} #css
