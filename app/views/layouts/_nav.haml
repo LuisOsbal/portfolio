@@ -9,23 +9,51 @@
       %span
   #navbarExampleTransparentExample.navbar-menu
     .navbar-start
-      %a= link_to t("menu.home"), "", class: "navbar-item"
-
-      %a= link_to t("menu.services"), "", class: "navbar-item"
-
-      %a= link_to t("menu.blog"), "", class: "navbar-item"
-
-      %a= link_to t("menu.portfolio"), "", class: "navbar-item"
-
-      %a= link_to t("menu.contact"), "", class: "navbar-item"
-
+      %a.navbar-item{:href => "/settings"}
+        %div{:style => "position:relative"}
+          %span.icon
+            %i.fa.fa-gear
+          %span= t("menu.home")
+      %a.navbar-item{:href => "/settings"}
+        %div{:style => "position:relative"}
+          %span.icon
+            %i.fa.fa-gear
+          %span= t("menu.services")
+      %a.navbar-item{:href => "/settings"}
+        %div{:style => "position:relative"}
+          %span.icon
+            %i.fa.fa-gear
+          %span= t("menu.blog")
+      %a.navbar-item{:href => "/settings"}
+        %div{:style => "position:relative"}
+          %span.icon
+            %i.fa.fa-gear
+          %span= t("menu.portfolio")
+      %a.navbar-item{:href => "/settings"}
+        %div{:style => "position:relative"}
+          %span.icon
+            %i.fa.fa-gear
+          %span= t("menu.contact")
+      -# =link_to t("menu.home"), "", class: "navbar-item"
+      -# =link_to t("menu.services"), "", class: "navbar-item"
+      -# =link_to t("menu.blog"), "", class: "navbar-item"
+      -# =link_to t("menu.portfolio"), "", class: "navbar-item"
+      -# =link_to t("menu.contact"), "", class: "navbar-item"
       .navbar-item.has-dropdown.is-hoverable
         %a.navbar-link
           %span.icon
-            %i.fa.fas.fa-language
+            %i.flag-icon.flag-icon-mx
         .navbar-dropdown.is-boxed
-          %a= link_to t("menu.language.spanish"), { :locale=>'es' }, class: "navbar-item"
-          %a= link_to t("menu.language.english"), { :locale=>'en' }, class: "navbar-item"
+          %a.navbar-item{:href => "/es"}
+            %div{:style => "position:relative"}
+              %span.icon
+                %i.flag-icon.flag-icon-mx
+              %span= t("menu.language.spanish")
+          %a.navbar-item{:href => "/en"}
+            %div{:style => "position:relative"}
+              %span.icon
+                %i.flag-icon.flag-icon-us
+              %span= t("menu.language.english")
     .navbar-end
       .navbar-item
         .field.is-grouped

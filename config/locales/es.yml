@@ -1,5 +1,7 @@
 es:
   name: "Luis Osnet"
+  job: "Ruby on Rails developer"
+  description: Ruby on Rails developer trying to help people one code line at time.
   hello: "Hola Amigo"
   # navbar
   menu:

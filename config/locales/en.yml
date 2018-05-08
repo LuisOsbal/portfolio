@@ -1,5 +1,6 @@
 en:
   name: "Luis Osnet"
+  job: "Ruby on Rails developer"
   hello: "Hello Friend"
   # navbar
   menu:

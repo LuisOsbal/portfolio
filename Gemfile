@@ -40,6 +40,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'rails-i18n', '~> 5.0', '>= 5.0.4'
 gem "font-awesome-rails"
+# Provides a collection of all country flags in SVG
+gem 'flag-icons-rails'
 
 group :development, :test do
   gem 'awesome_print', require: 'ap'
