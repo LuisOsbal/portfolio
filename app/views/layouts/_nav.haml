@@ -1,4 +1,4 @@
-%nav.navbar.has-shadow.is-spaced
+%nav.navbar.has-shadow.is-spaced.is-fixed-top
   .navbar-brand
     %a.navbar-item
       =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
@@ -9,40 +9,38 @@
       %span
   #navbarExampleTransparentExample.navbar-menu
     .navbar-start
-      %a.navbar-item{:href => "/settings"}
+      %a.navbar-item{:href => "#"}
         %div{:style => "position:relative"}
           %span.icon
-            %i.fa.fa-gear
+            %i.fa.fas.fa-home.home
           %span= t("menu.home")
-      %a.navbar-item{:href => "/settings"}
+      %a.navbar-item{:href => "#"}
         %div{:style => "position:relative"}
           %span.icon
             %i.fa.fa-gear
           %span= t("menu.services")
-      %a.navbar-item{:href => "/settings"}
+      %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
         %div{:style => "position:relative"}
           %span.icon
-            %i.fa.fa-gear
+            %i.fa.fas.fa-rss.rss
           %span= t("menu.blog")
-      %a.navbar-item{:href => "/settings"}
+      %a.navbar-item{:href => "#"}
         %div{:style => "position:relative"}
           %span.icon
-            %i.fa.fa-gear
-          %span= t("menu.portfolio")
-      %a.navbar-item{:href => "/settings"}
+            %i.fa.far.fa-folder.folder
+          %span= t("menu.portrait")
+      %a.navbar-item{:href => "#"}
         %div{:style => "position:relative"}
           %span.icon
-            %i.fa.fa-gear
+            %i.fa.far.fa-envelope.email
           %span= t("menu.contact")
-      -# =link_to t("menu.home"), "", class: "navbar-item"
-      -# =link_to t("menu.services"), "", class: "navbar-item"
-      -# =link_to t("menu.blog"), "", class: "navbar-item"
-      -# =link_to t("menu.portfolio"), "", class: "navbar-item"
-      -# =link_to t("menu.contact"), "", class: "navbar-item"
       .navbar-item.has-dropdown.is-hoverable
         %a.navbar-link
           %span.icon
-            %i.flag-icon.flag-icon-mx
+            - if I18n.locale == :es
+              %i.flag-icon.flag-icon-mx
+            - else
+              %i.flag-icon.flag-icon-us
         .navbar-dropdown.is-boxed
           %a.navbar-item{:href => "/es"}
             %div{:style => "position:relative"}

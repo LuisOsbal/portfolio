@@ -1,14 +1,14 @@
 es:
   name: "Luis Osnet"
   job: "Ruby on Rails Developer"
-  description: Ruby on Rails developer trying to help people one code line at time.
+  description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "Hola Amigo"
   # navbar
   menu:
     home: "Inicio"
     services: "Servicios"
     blog: "Blog"
-    portforlio: "Portafolio"
+    portrait: "Portafolio"
     contact: "Contacto"
     language:
       spanish: "Español"

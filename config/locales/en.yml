@@ -1,14 +1,14 @@
 en:
   name: "Luis Osnet"
   job: "Ruby on Rails Developer"
-  description: Ruby on Rails developer trying to help people one code line at time.
+  description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "Hello Friend"
   # navbar
   menu:
     home: "Home"
     services: "Services"
     blog: "Blog"
-    portforlio: "Portfolio"
+    portrait: "Portrait"
     contact: "Contact"
     language:
       spanish: "Spanish"
@@ -16,3 +16,10 @@ en:
     buttons:
       share: "Share"
       resume: "Download resume"
+  # Social network
+  social:
+    twitter_user: "@LuisOsnet"
+    facebook_user: "@LuisOsnet"
+    github_user: "@LuisOsnet"
+    instagram_user: "@LuisOsnet"
+    youtube_user: "@LuisOsnet"
