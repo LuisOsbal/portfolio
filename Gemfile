@@ -66,6 +66,10 @@ group :development, :test do
   # For call-stack profiling flamegraphs
   gem 'flamegraph'
   gem 'stackprof'
+  gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
+  gem "poltergeist"
+  gem 'capybara', '>= 2.15', '< 4.0'
 end
 
 group :development do
@@ -79,7 +83,6 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15', '< 4.0'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
