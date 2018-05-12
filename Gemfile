@@ -58,7 +58,7 @@ group :development, :test do
   gem 'pry-rails', group: :development
   # gem 'rack-mini-profiler'
   gem 'rails-perftest'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.7'
   gem 'rubocop', require: false
   gem 'ruby-prof'
   gem 'shoulda-matchers'
