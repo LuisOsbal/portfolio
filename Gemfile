@@ -58,7 +58,8 @@ group :development, :test do
   gem 'pry-rails', group: :development
   # gem 'rack-mini-profiler'
   gem 'rails-perftest'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.7'
+  gem 'guard-rspec'
   gem 'rubocop', require: false
   gem 'ruby-prof'
   gem 'shoulda-matchers'
@@ -75,7 +76,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  gem "spring", group: :development
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
@@ -86,6 +87,3 @@ group :test do
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

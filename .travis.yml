@@ -1,0 +1,21 @@
+# sets the language
+language: ruby
+# sets the ruby version/type
+# if you have more than one version, just add more lines
+rbenv:
+  - 1.1.1
+# these actions will only be redone if they change
+# we only need to bundle if we add new things, and it
+# can take a long time so best to only do it when needed
+cache: bundler
+# sets up services like your databases
+sudo: enabled
+services:
+  - postgresql
+# scripts you run before your test
+# in this case, it creates and migrates our postgresql database
+before_script:
+  - bundle exec rake db:create
+  - bundle exec rake db:migrate
+# the script that runs your tests
+script: bundle exec rspec
