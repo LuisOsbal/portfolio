@@ -8,7 +8,7 @@ es:
     home: "Inicio"
     services: "Servicios"
     blog: "Blog"
-    portrait: "Portafolio"
+    portfolio: "Portafolio"
     contact: "Contacto"
     language:
       spanish: "Español"
@@ -23,3 +23,7 @@ es:
     github_user: "@LuisOsnet"
     instagram_user: "@LuisOsnet"
     youtube_user: "@LuisOsnet"
+  # Content
+  content:
+    build: "Desarrollado con"
+    by: por
