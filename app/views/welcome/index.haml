@@ -1,16 +1,4 @@
-.card
-  .card-image
-    %figure.image.is-4by3
-      = image_tag "console.jpg", alt: "Luis Osnet", class: "coming_soon"
-  .card-content
-    .media
-      .media-left
-        %figure.image.is-48x48
-          =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
-      .media-content
-        %p.title.is-4= t('name') + ": " + t('job')
-        %p.subtitle.is-6 @LuisOsnet
-    .content
-      = t('description')
-      = succeed "." do
-        %a{:href => "http://twitter.com/luisosnet"} @LuisOsnet
+.hero-body
+  .container
+    %h1.title= t('name')
+    %h2.subtitle= t('job')

@@ -1,6 +1,6 @@
 es:
   name: "Luis Osnet"
-  job: "Ruby on Rails Developer"
+  job: "Programador Ruby on Rails"
   description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "Hola Amigo"
   # navbar
@@ -8,7 +8,7 @@ es:
     home: "Inicio"
     services: "Servicios"
     blog: "Blog"
-    portrait: "Portafolio"
+    portfolio: "Portafolio"
     contact: "Contacto"
     language:
       spanish: "Español"
@@ -16,6 +16,10 @@ es:
     buttons:
       share: Compartir
       resume: Descargar CV
+  # Footer
+  footer:
+    build: "Build with"
+    by: "by"
   # Social network
   social:
     twitter_user: "@LuisOsnet"
