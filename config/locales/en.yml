@@ -3,7 +3,7 @@ en:
   job: "Ruby on Rails Developer"
   description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "Hello Friend"
-  # navbar
+  # Navbar
   menu:
     home: "Home"
     services: "Services"
@@ -16,6 +16,13 @@ en:
     buttons:
       share: "Share"
       resume: "Download resume"
+  # Content
+  # content:
+
+  # Footer
+  footer:
+    build: "Build with"
+    by: "by"
   # Social network
   social:
     twitter_user: "@LuisOsnet"
@@ -23,7 +30,3 @@ en:
     github_user: "@LuisOsnet"
     instagram_user: "@LuisOsnet"
     youtube_user: "@LuisOsnet"
-  # Content
-  content:
-    build: "Build with"
-    by: "by"
