@@ -1,71 +1,72 @@
-%nav.navbar.has-shadow.is-spaced.is-fixed-top
-  .navbar-brand
-    %a.navbar-item
-      =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
-      %h1.isotipo Luis Osnet
-    .navbar-burger.burger{"data-target" => "navMenubd"}
-      %span
-      %span
-      %span
-  #navMenubd.navbar-menu
-    .navbar-start
-      %a.navbar-item{:href => "#"}
-        %div{:style => "position:relative"}
-          %span.icon
-            %i.fa.fas.fa-home.home
-          %span= t("menu.home")
-      %a.navbar-item{:href => "#"}
-        %div{:style => "position:relative"}
-          %span.icon
-            %i.fa.fa-gear
-          %span= t("menu.services")
-      %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
-        %div{:style => "position:relative"}
-          %span.icon
-            %i.fa.fas.fa-rss.rss
-          %span= t("menu.blog")
-      %a.navbar-item{:href => "#"}
-        %div{:style => "position:relative"}
-          %span.icon
-            %i.fa.far.fa-folder.folder
-          %span= t("menu.portrait")
-      %a.navbar-item{:href => "#"}
-        %div{:style => "position:relative"}
-          %span.icon
-            %i.fa.far.fa-envelope.email
-          %span= t("menu.contact")
-      .navbar-item.has-dropdown.is-hoverable
-        %a.navbar-link
-          %span.icon
-            - if I18n.locale == :es
-              %i.flag-icon.flag-icon-mx
-            - else
-              %i.flag-icon.flag-icon-us
-        .navbar-dropdown.is-boxed
-          %a.navbar-item{:href => "/es"}
-            %div{:style => "position:relative"}
-              %span.icon
+%nav#navbar.navbar.has-shadow.is-spaced
+  .container
+    .navbar-brand
+      %a.navbar-item{:href => "/"}
+        =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
+        %h1.isotipo= t('name')
+      #navbarBurger.navbar-burger.burger{"data-target" => "navMenu"}
+        %span
+        %span
+        %span
+    #navMenu.navbar-menu
+      .navbar-start
+        %a.navbar-item.is-active{:href => "#"}
+          %div{:style => "position:relative"}
+            %span.icon
+              %i.fa.fas.fa-home.home
+            %span= t("menu.home")
+        %a.navbar-item{:href => "#"}
+          %div{:style => "position:relative"}
+            %span.icon
+              %i.fa.fa-gear
+            %span= t("menu.services")
+        %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
+          %div{:style => "position:relative"}
+            %span.icon
+              %i.fa.fas.fa-rss.rss
+            %span= t("menu.blog")
+        %a.navbar-item{:href => "#"}
+          %div{:style => "position:relative"}
+            %span.icon
+              %i.fa.far.fa-folder.folder
+            %span= t("menu.portfolio")
+        %a.navbar-item{:href => "#"}
+          %div{:style => "position:relative"}
+            %span.icon
+              %i.fa.far.fa-envelope.email
+            %span= t("menu.contact")
+        .navbar-item.has-dropdown.is-hoverable
+          %a.navbar-link
+            %span.icon
+              - if I18n.locale == :es
                 %i.flag-icon.flag-icon-mx
-              %span= t("menu.language.spanish")
-          %a.navbar-item{:href => "/en"}
-            %div{:style => "position:relative"}
-              %span.icon
+              - else
                 %i.flag-icon.flag-icon-us
-              %span= t("menu.language.english")
-    .navbar-end
-      .navbar-item
-        .field.is-grouped
-          %p.control
-            %a.bd-tw-button.button{"data-social-action" => "tweet",
-              "data-social-network" => "Twitter",
-              "data-social-target" => "http://localhost:4000",
-              :href => "https://twitter.com/intent/tweet?text=LuisOsnet: Ruby on Rails developer trying to help people one code line at time.&hashtags=LuisOsnet&url=http://luisosnet.com",
-              :target => "_blank"}
-              %span.icon
-                %i.fa.fab.fa-twitter
-              %span= t("menu.buttons.share")
-          %p.control
-            %a.button.is-primary{}
-              %span.icon
-                %i.fa.fas.fa-download
-              %span= t("menu.buttons.resume")
+          .navbar-dropdown.is-boxed
+            %a.navbar-item{:href => "/es"}
+              %div{:style => "position:relative"}
+                %span.icon
+                  %i.flag-icon.flag-icon-mx
+                %span= t("menu.language.spanish")
+            %a.navbar-item{:href => "/en"}
+              %div{:style => "position:relative"}
+                %span.icon
+                  %i.flag-icon.flag-icon-us
+                %span= t("menu.language.english")
+      .navbar-end
+        .navbar-item
+          .field.is-grouped.is-grouped-multiline
+            %p.control
+              %a.bd-tw-button.button{"data-social-action" => "tweet",
+                "data-social-network" => "Twitter",
+                "data-social-target" => "#",
+                :href => "https://twitter.com/intent/tweet?text=LuisOsnet: Ruby on Rails developer trying to help people one code line at time.&hashtags=LuisOsnet&url=http://luisosnet.com",
+                :target => "_blank"}
+                %span.icon
+                  %i.fa.fab.fa-twitter
+                %span= t("menu.buttons.share")
+            %p.control
+              %a.button.is-info
+                %span.icon
+                  %i.fa.fas.fa-download
+                %span= t("menu.buttons.resume")
