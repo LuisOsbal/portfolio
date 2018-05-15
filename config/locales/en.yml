@@ -16,9 +16,10 @@ en:
     buttons:
       share: "Share"
       resume: "Download resume"
-  # Content
-  # content:
-
+  # blog
+  article:
+    title: "¡ME INTERESA TU FEEDBACK!"
+    description: "Si quieres estar informado puntualmente de todos las novedades sobre tutoriales y cursos relacionados con programación entonces, regístrate gratuitamente."
   # Footer
   footer:
     build: "Build with"
