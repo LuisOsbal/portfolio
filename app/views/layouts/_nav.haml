@@ -10,7 +10,7 @@
         %span
     #navMenu.navbar-menu
       .navbar-start
-        %a.navbar-item.is-active{:href => "#"}
+        %a.navbar-item.is-active{:href => root_path}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.fas.fa-home.home
@@ -20,7 +20,8 @@
             %span.icon
               %i.fa.fa-gear
             %span= t("menu.services")
-        %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
+        -# %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
+        %a.navbar-item{:href => articles_path}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.fas.fa-rss.rss
@@ -66,7 +67,7 @@
                   %i.fa.fab.fa-twitter
                 %span= t("menu.buttons.share")
             %p.control
-              %a.button.is-info
+              %a.button.is-info{:href => "/docs/resume.pdf",  :target => "_blank"}
                 %span.icon
                   %i.fa.fas.fa-download
                 %span= t("menu.buttons.resume")
