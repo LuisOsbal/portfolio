@@ -1,0 +1,27 @@
+%section.section.columns#contact
+  .container.has-text-centered.column.is-10.is-offset-1
+    %h2.title Contact
+    %form
+      .field.is-horizontal
+        .field-body
+          .field
+            %p.control.has-icons-left
+              %input.input{:placeholder => "Name", :type => "text"}
+              %span.icon.is-small.is-left
+                %i.fa.fas.fa-user
+          .field
+            %p.control.has-icons-left.has-icons-right
+              %input.input{:placeholder => "Email", :type => "email"}
+              %span.icon.is-small.is-left
+                %i.fa.fas.fa-envelope
+      .field.is-horizontal
+        .field-body
+          .field
+            .control
+              %textarea.textarea{:placeholder => "Message us"}
+      .field.is-horizontal
+        .field-body
+          .field
+            .control
+              %button.button.is-info
+                Send message
