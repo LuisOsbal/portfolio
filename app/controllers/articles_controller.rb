@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :retrieve_articles, only: [:index]
   before_action :retrieve_article, only: [:show]
-
   def index
     @articles
   end
