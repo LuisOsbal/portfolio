@@ -6,6 +6,11 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-    redirect_to root_path if @contact.deliver
+    if @contact.deliver
+      redirect_to root_path
+    else
+      flash.now[:error] = "no se envio"
+      redirect_to root_path
+    end
   end
 end

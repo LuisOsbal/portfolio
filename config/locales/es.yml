@@ -3,7 +3,7 @@ es:
   owner_name: "Luis Osnet"
   job: "Desarrollador Ruby on Rails"
   description: "Ruby on Rails developer trying to help people one code line at time."
-  hello: "Hola Amigo"
+  hello: "!Hola soy Luis Osnet¡"
   # navbar
   menu:
     home: "Inicio"
@@ -17,6 +17,10 @@ es:
     buttons:
       share: Compartir
       resume: Descargar CV
+  # portfolio
+  portfolio:
+    title: "¡ME INTERESA TU FEEDBACK!"
+    description: "Si quieres estar informado puntualmente de todos las novedades sobre tutoriales y cursos relacionados con programación entonces, regístrate gratuitamente."
   # blog
   article:
     title: "¡ME INTERESA TU FEEDBACK!"
