@@ -1,16 +1,85 @@
 %section.hero
   .hero-body
-    .container.has-text-centered
+    .container
       .columns.is-vcentered
         .column.is-5
-          %figure.image.is-4by3
-            %img{:alt => "Description", :src => "https://placehold.it/800x700"}/
+          %figure.image.is-6by4
+            =image_tag("myself.jpg", alt: "Luis Osnet")
         .column.is-6.is-offset-1
           %h1.title.is-2
-            Superhero Scaffolding
+            Hola! Soy Luis Osnet
           %h2.subtitle.is-4
             Let this cover page describe a product or service.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           %br/
           %p.has-text-centered
             %a.button.is-medium.is-info.is-outlined
               Learn more
+
+%section#customize.bd-easy.section#portfolio
+  .container
+    %header.bd-index-header
+      %h3.title.is-3= t("article.title")
+      %h4.subtitle.is-4= t("article.description")
+
+.cd-timeline.cd-container
+  .cd-timeline-block
+    .cd-timeline-img.cd-timeline-img
+      %img{:alt => "Description", :src => "https://boletia.com/assets/logokit/icon-kit/png/icon_orange.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 1
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.
+      %a.button.is-info.is-outlined.cd-read-more Read more
+      %span.cd-date Jan 14
+
+  .cd-timeline-block
+    .cd-timeline-img.cd-timeline-img
+      %img{:alt => "Description", :src => "https://resuelvetudeuda.com/wp-content/uploads/2017/12/cropped-icon.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 2
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+      %a.button.is-info.is-outlined.cd-read-more Read more
+      %span.cd-date Jan 18
+
+  .cd-timeline-block
+    .cd-timeline-img
+      %img{:alt => "Description", :src => "http://a-l.com.mx/img/logo.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 3
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+      %a.button.is-info.is-outlined.cd-read-more{:href => "#0"} Read more
+      %span.cd-date Jan 24
+
+  .cd-timeline-block
+    .cd-timeline-img
+      %img{:alt => "Description", :src => "http://2.bp.blogspot.com/-ahzJshoCTCg/UARNFDDzyeI/AAAAAAAAAAY/UG-5hlglMjc/s300/featured.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 4
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+      %a.button.is-info.is-outlined.cd-read-more Read more
+      %span.cd-date Jan 18
+
+  .cd-timeline-block
+    .cd-timeline-img
+      %img{:alt => "Description", :src => "http://www.petramex.com/bamf/Promologistics/images/admin/pirinola.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 5
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+      %a.button.is-info.is-outlined.cd-read-more{:href => "#0"} Read more
+      %span.cd-date Jan 24
+
+  .cd-timeline-block
+    .cd-timeline-img
+      %img{:alt => "Description", :src => "http://canaero.alpha-it.mx/wp-content/uploads/2017/01/03141019/gate_gourmet.png"}
+    .cd-timeline-content
+      .title.is-5 Title of section 6
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
+      %a.button.is-info.is-outlined.cd-read-more Read more
+      %span.cd-date Jan 18
