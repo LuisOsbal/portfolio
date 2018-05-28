@@ -46,6 +46,10 @@ gem 'font-awesome-rails'
 gem 'flag-icons-rails'
 # Customizable and sophisticated paginator for modern web app frameworks.
 gem 'kaminari'
+gem 'mail_form'
+# Simple Form aims to be as flexible as possible while helping you with powerful
+# components to create your forms.
+gem 'simple_form'
 
 group :development, :test do
   gem 'awesome_print', require: 'ap'

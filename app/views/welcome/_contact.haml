@@ -1,24 +1,24 @@
 %section.section.columns#contact
   .container.has-text-centered.column.is-10.is-offset-1
     %h2.title Contact
-    %form
+    = simple_form_for :contact, defaults: { wrapper: false }, :url => {:action => :create, :controller => :contacts}, html: { class: "form-horizontal"} do |f|
       .field.is-horizontal
         .field-body
           .field
             %p.control.has-icons-left
-              %input.input{:placeholder => "Name", :type => "text"}
+              = f.input :name, placeholder: "Nombre", input_html: { class: 'input input' }, label: false
               %span.icon.is-small.is-left
                 %i.fa.fas.fa-user
           .field
             %p.control.has-icons-left.has-icons-right
-              %input.input{:placeholder => "Email", :type => "email"}
+              = f.input :email, placeholder: "Email", input_html: { class: 'input input' }, label: false
               %span.icon.is-small.is-left
                 %i.fa.fas.fa-envelope
       .field.is-horizontal
         .field-body
           .field
             .control
-              %textarea.textarea{:placeholder => "Message us"}
+              = f.input :message, as: :text, placeholder: "Contactame", input_html: { class: 'textarea textarea' }, label: false
       .field.is-horizontal
         .field-body
           .field
