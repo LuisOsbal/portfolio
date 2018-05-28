@@ -5,6 +5,7 @@ class CreateArticles < ActiveRecord::Migration[5.2]
       t.string :image_url
       t.string :content
       t.integer :claps
+      t.boolean :status, default: true
       t.timestamps
     end
   end
