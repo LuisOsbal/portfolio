@@ -3,7 +3,7 @@
     .navbar-brand
       %a.navbar-item{:href => "/"}
         =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
-        %h1.isotipo= t('name')
+        %h1.isotipo= t('owner_name')
       #navbarBurger.navbar-burger.burger{"data-target" => "navMenu"}
         %span
         %span
@@ -18,19 +18,13 @@
         %a.navbar-item{:href => "#"}
           %div{:style => "position:relative"}
             %span.icon
-              %i.fa.fa-gear
-            %span= t("menu.services")
-        -# %a.navbar-item{:href => "https://medium.com/@LuisOsnet",  :target => "_blank"}
+              %i.fa.far.fa-folder.folder
+            %span= t("menu.portfolio")
         %a.navbar-item{:href => articles_path}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.fas.fa-rss.rss
             %span= t("menu.blog")
-        %a.navbar-item{:href => "#"}
-          %div{:style => "position:relative"}
-            %span.icon
-              %i.fa.far.fa-folder.folder
-            %span= t("menu.portfolio")
         %a.navbar-item{:href => "#"}
           %div{:style => "position:relative"}
             %span.icon

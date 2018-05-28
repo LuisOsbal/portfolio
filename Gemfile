@@ -41,15 +41,18 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'rails-i18n', '~> 5.0', '>= 5.0.4'
-gem "font-awesome-rails"
+gem 'font-awesome-rails'
 # Provides a collection of all country flags in SVG
 gem 'flag-icons-rails'
+# Customizable and sophisticated paginator for modern web app frameworks.
+gem 'kaminari'
 
 group :development, :test do
   gem 'awesome_print', require: 'ap'
   gem 'better_errors'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'dotenv-rails', groups: %i[development test]
   gem 'factory_bot'
   gem 'guard-rubocop'
   gem 'guard-rubycritic'
@@ -72,12 +75,10 @@ group :development, :test do
 end
 
 group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  # gem "spring", group: :development
-  # gem 'spring-watcher-listen', '~> 2.0.0'
+  # Access an interactive console on exception pages or by calling 'console
+  # anywhere in the code.
+  gem 'web-console', '>= 3.3.0'
 end
 
 group :test do

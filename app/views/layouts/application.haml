@@ -9,7 +9,7 @@
     %meta{ name: "owner", content: t('owner_name') }
     -# Humans
     %link{ type: "text/plain", rel: "author", href: "/humans.txt" }
-    %meta{ name: "Copyright", content: "luisosnet.com" }
+    %meta{ name: "Copyright", content: t('social.url') }
     %meta{ name: "robots", content: "all", href: "/robots.txt" }
     -# Favicons
     %link{ rel: 'icon', type: "image/png", sizes: '16x16 32x32 48x48 64x64', href: '/favicons/favicon.ico' }
@@ -26,37 +26,37 @@
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-96x96.png", sizes: "96x96" }
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-32x32.png", sizes: "32x32" }
     %link{ rel: "icon", type: "image/png", href: "/favicons/favicon-16x16.png", sizes: "16x16" }
-    %meta{ name: "application-name", content: t('author_name') }
-    %meta{ name: "msapplication-TileColor", content: "#FFFFFF" }
-    %meta{ name: "msapplication-square310x310logo", content: "mstile-310x310.png" }
-    %meta{ name: "msapplication-wide310x150logo", content: "mstile-310x150.png" }
-    %meta{ name: "msapplication-square150x150logo", content: "mstile-150x150.png" }
-    %meta{ name: "msapplication-TileImage", content: "mstile-144x144.png" }
-    %meta{ name: "msapplication-square70x70logo", content: "mstile-70x70.png" }
+    %meta{ content: t('author_name'), name: "application-name" }
+    %meta{ content: "#FFFFFF", name: "msapplication-TileColor" }
+    %meta{ content: "mstile-310x310.png", name: "msapplication-square310x310logo" }
+    %meta{ content: "mstile-310x150.png", name: "msapplication-wide310x150logo" }
+    %meta{ content: "mstile-150x150.png", name: "msapplication-square150x150logo" }
+    %meta{ content: "mstile-144x144.png", name: "msapplication-TileImage" }
+    %meta{ content: "mstile-70x70.png", name: "msapplication-square70x70logo" }
     -# Mobile Specific Metas
-    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
-    %meta{ 'http-equiv': "x-ua-compatible", content: "ie=edge, chrome=1" }
+    %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
+    %meta{ content: "ie=edge, chrome=1", 'http-equiv': "x-ua-compatible" }
     -# og tags Facebook
-    %meta{ property: "fb:admins", content: "904862066288762" }
-    %meta{ property: "og:description", content: t('description') }
-    %meta{ property: "og:title", content: t('author_name') }
-    %meta{ property: "og:type", content: "website" }
-    %meta{ property: "og:url", content: "luisosnet.com" }
-    %meta{ property: "og:image", content: "" }
-    %meta{ property: "og:site_name", content: "luisosnet.com" }
+    %meta{ content: "904862066288762", property: "fb:admins" }
+    %meta{ content: t('description'), property: "og:description" }
+    %meta{ content: t('author_name'), property: "og:title" }
+    %meta{ content: "website", property: "og:type" }
+    %meta{ content: t('social.url'), property: "og:url" }
+    %meta{ content: "", property: "og:image" }
+    %meta{ content: t('social.url'), property: "og:site_name" }
     -# Twitter Cards
-    %meta{ property: "twitter:account_id", content: "1238060450" }
-    %meta{ name: "twitter:card", content: "summary_large_image" }
-    %meta{ name: "twitter:site", content: t('social.twitter_user') }
-    %meta{ name: "twitter:title", content: t('author_name') }
-    %meta{ name: "twitter:description", content: t('description') }
-    %meta{ name: "twitter:creator", content: t('social.twitter_user') }
-    %meta{ name: "twitter:image:src", content: "" }
-    %meta{ name: "twitter:domain", content: "luisosnet.com" }
+    %meta{ content: "1238060450", property: "twitter:account_id" }
+    %meta{ content: "summary_large_image", name: "twitter:card" }
+    %meta{ content: t('social.twitter_user'), name: "twitter:site" }
+    %meta{ content: t('author_name'), name: "twitter:title" }
+    %meta{ content: t('description'), name: "twitter:description" }
+    %meta{ content: t('social.twitter_user'), name: "twitter:creator" }
+    %meta{ content: "", name: "twitter:image:src" }
+    %meta{ content: t('social.url'), name: "twitter:domain" }
     -# og tags Google+
-    %meta{ itemprop: "name", content: t('author_name') }
-    %meta{ itemprop: "description", content: t('description') }
-    %meta{ itemprop: "image", content: "" }
+    %meta{ content: t('author_name'), itemprop: "name" }
+    %meta{ content: t('description'), itemprop: "description" }
+    %meta{ content: "", itemprop: "image" }
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags

@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Get all "navbar-burger" elements
+$( document ).on('turbolinks:load', function() {
   var $navbarBurgers = Array.prototype.slice.call(
     document.querySelectorAll('.navbar-burger'), 0
   );
@@ -16,5 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
         $target.classList.toggle('is-active');
       });
     });
-  }
+  };
 });

@@ -1,16 +1,16 @@
-.card
-  .card-image
-    %figure.image.is-4by3
-      = image_tag "console.jpg", alt: "Luis Osnet", class: "coming_soon"
-  .card-content
-    .media
-      .media-left
-        %figure.image.is-48x48
-          =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
-      .media-content
-        %p.title.is-4= t('name') + ": " + t('job')
-        %p.subtitle.is-6 @LuisOsnet
-    .content
-      = t('description')
-      = succeed "." do
-        %a{:href => "http://twitter.com/luisosnet"} @LuisOsnet
+%section.hero
+  .hero-body
+    .container.has-text-centered
+      .columns.is-vcentered
+        .column.is-5
+          %figure.image.is-4by3
+            %img{:alt => "Description", :src => "https://placehold.it/800x700"}/
+        .column.is-6.is-offset-1
+          %h1.title.is-2
+            Superhero Scaffolding
+          %h2.subtitle.is-4
+            Let this cover page describe a product or service.
+          %br/
+          %p.has-text-centered
+            %a.button.is-medium.is-info.is-outlined
+              Learn more

@@ -1,5 +1,6 @@
 en:
-  name: "Luis Osnet"
+  author_name: "Luis Osnet"
+  owner_name: "Luis Osnet"
   job: "Ruby on Rails Developer"
   description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "Hello Friend"
