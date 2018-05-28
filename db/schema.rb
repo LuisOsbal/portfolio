@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_05_14_213100) do
     t.string "image_url"
     t.string "content"
     t.integer "claps"
+    t.boolean "status", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

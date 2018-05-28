@@ -1,0 +1,23 @@
+%section.hero.is-light#blog
+  .bd-easy.section#customize
+    .container
+      %header.bd-index-header
+        %h3.title.is-3= t("article.title")
+        %h4.subtitle.is-4= t("article.description")
+  .hero-body
+    .columns.is-multiline
+      - @articles.each do |article|
+        .column.is-4
+          .card.is-shady
+            %figure.image.is-5by4
+              %img{:src => "https://bulma.io/images/placeholders/256x256.png"}/
+            .card-content
+              .content
+                %h4= article.title
+                %p Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.
+                %a{:href => article_path(article.id)} Learn more
+  .hero
+    .hero-body
+      .container
+        %p.has-text-centered
+          %a.button.is-warning{:href => articles_path} Learn more
