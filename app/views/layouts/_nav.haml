@@ -15,39 +15,39 @@
             %span.icon
               %i.fa.fas.fa-home.home
             %span= t("menu.home")
-        %a.navbar-item{:href => "#portfolio"}
+        %a.navbar-item{:href => "/#portfolio"}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.far.fa-folder.folder
             %span= t("menu.portfolio")
-        %a.navbar-item{:href => "#blog"}
+        %a.navbar-item{:href => "/#blog"}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.fas.fa-rss.rss
             %span= t("menu.blog")
-        %a.navbar-item{:href => "#contact"}
+        %a.navbar-item{:href => "/#contact"}
           %div{:style => "position:relative"}
             %span.icon
               %i.fa.far.fa-envelope.email
             %span= t("menu.contact")
-        .navbar-item.has-dropdown.is-hoverable
-          %a.navbar-link
-            %span.icon
-              - if I18n.locale == :es
-                %i.flag-icon.flag-icon-mx
-              - else
-                %i.flag-icon.flag-icon-us
-          .navbar-dropdown.is-boxed
-            %a.navbar-item{:href => "/es"}
-              %div{:style => "position:relative"}
-                %span.icon
-                  %i.flag-icon.flag-icon-mx
-                %span= t("menu.language.spanish")
-            %a.navbar-item{:href => "/en"}
-              %div{:style => "position:relative"}
-                %span.icon
-                  %i.flag-icon.flag-icon-us
-                %span= t("menu.language.english")
+        -# .navbar-item.has-dropdown.is-hoverable
+        -#   %a.navbar-link
+        -#     %span.icon
+        -#       - if I18n.locale == :es
+        -#         %i.flag-icon.flag-icon-mx
+        -#       - else
+        -#         %i.flag-icon.flag-icon-us
+        -#   .navbar-dropdown.is-boxed
+        -#     %a.navbar-item{:href => "/es"}
+        -#       %div{:style => "position:relative"}
+        -#         %span.icon
+        -#           %i.flag-icon.flag-icon-mx
+        -#         %span= t("menu.language.spanish")
+        -#     %a.navbar-item{:href => "/en"}
+        -#       %div{:style => "position:relative"}
+        -#         %span.icon
+        -#           %i.flag-icon.flag-icon-us
+        -#         %span= t("menu.language.english")
       .navbar-end
         .navbar-item
           .field.is-grouped.is-grouped-multiline

@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
 class WelcomeController < ApplicationController
-  before_action :retrieve_timeline, only: %i[index]
-
   def index
     @articles = welcome_service(status: true).show_all
-    @timeline = retrieve_timeline
+    @companies = welcome_service({}).show_companies
   end
 
   private
@@ -15,10 +13,5 @@ class WelcomeController < ApplicationController
   # params that the controller send
   def welcome_service(hash_params)
     @welcome_service ||= WelcomeService.new(hash_params)
-  end
-
-  # Retrieve al the active dvertisement
-  def retrieve_timeline
-    Timeline.all
   end
 end

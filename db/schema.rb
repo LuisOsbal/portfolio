@@ -25,6 +25,22 @@ ActiveRecord::Schema.define(version: 2018_05_28_230816) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "companies", force: :cascade do |t|
+    t.text "brand_logo_url"
+    t.text "brand_url"
+    t.string "brand_contact"
+    t.string "title"
+    t.string "position"
+    t.string "description"
+    t.string "content"
+    t.jsonb "activities"
+    t.datetime "start_date"
+    t.datetime "end_date"
+    t.boolean "status", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "delayed_jobs", force: :cascade do |t|
     t.integer "priority", default: 0, null: false
     t.integer "attempts", default: 0, null: false
@@ -38,20 +54,6 @@ ActiveRecord::Schema.define(version: 2018_05_28_230816) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
-  end
-
-  create_table "timelines", force: :cascade do |t|
-    t.text "brand_logo_url"
-    t.string "title"
-    t.string "description"
-    t.string "content"
-    t.text "brand_url"
-    t.string "brand_contact"
-    t.datetime "start_date"
-    t.datetime "end_date"
-    t.boolean "status", default: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

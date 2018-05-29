@@ -1,0 +1,39 @@
+-# Analytics
+= render :partial => 'shared/google_analytics'
+%section.hero
+  .hero-body
+    .container
+      .columns
+        .column.is-narrow
+          %img{:src => "#{@company.brand_logo_url}", class: 'third-party-logo', alt: "#{@company.title}"}
+        .column
+          .content
+            %p
+              %strong= @company.title
+              %br
+              %small
+                %a= @company.brand_url
+              %br
+              %small
+                %span= "Contacto: #{@company.brand_contact}"
+            #meta.field.is-grouped.is-grouped-multiline
+              .control
+                .tags.has-addons
+                  %span.tag= @company.start_date.strftime("%b %Y")
+                  - if @company.status == true
+                    %span.tag.is-success Actualmente
+                  - else
+                    %span.tag.is-danger= @company.end_date.strftime("%b %Y")
+            %p= @company.content
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            %p
+              %strong Tareas
+            %ul
+              - @company.activities["title"].each do |task|
+                %li
+                  %code= task
+  .hero
+    .hero-body
+      .container
+        %p.has-text-centered
+          %a.button.is-warning{:href => root_path} Learn more

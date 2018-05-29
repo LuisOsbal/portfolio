@@ -16,10 +16,19 @@ class WelcomeService
     )
   end
 
+  def show_companies
+    retrieve_companies
+  end
+
   private
 
-  # Retrieve al the active dvertisement
+  # Retrieve the active articles
   def retrieve_articles(params)
     Article.where(params).limit(3)
+  end
+
+  # Retrieve companies
+  def retrieve_companies
+    Company.all.order(created_at: :desc)
   end
 end
