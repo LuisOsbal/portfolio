@@ -6,11 +6,11 @@ class WelcomeService
   end
 
   def show_all
-    retrieve_advertisements(status: @params[:status])
+    retrieve_articles(status: @params[:status])
   end
 
   def show
-    retrieve_advertisements(
+    retrieve_articles(
       status: @params[:status],
       id: @params[:article_id]
     )
@@ -19,7 +19,7 @@ class WelcomeService
   private
 
   # Retrieve al the active dvertisement
-  def retrieve_advertisements(params)
+  def retrieve_articles(params)
     Article.where(params).limit(3)
   end
 end
