@@ -1,70 +1,16 @@
-%section#customize.bd-easy.section#portfolio
+.section#customize.bd-easy.section#portfolio
   .container
     %header.bd-index-header
       %h3.title.is-3= t("portfolio.title")
       %h4.subtitle.is-4= t("portfolio.description")
 
 .cd-timeline.cd-container
-  .cd-timeline-block
-    .cd-timeline-img.cd-timeline-img
-      =image_tag("logotipos/boletia.png", class: 'logo-brand', alt: "Boletia")
-    .cd-timeline-content
-      .title.is-5 Title of section 1
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.
-      %a.button.is-info.is-outlined.cd-read-more Read more
-      %span.cd-date Jan 14
-
-  .cd-timeline-block
-    .cd-timeline-img.cd-timeline-img
-      =image_tag("logotipos/resuelvetudeuda.png", class: 'logo-brand', alt: "Resuelve tu deuda")
-    .cd-timeline-content
-      .title.is-5 Title of section 2
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-      %a.button.is-info.is-outlined.cd-read-more Read more
-      %span.cd-date Jan 18
-
-  .cd-timeline-block
-    .cd-timeline-img
-      =image_tag("logotipos/desarrolladoraayl.png", class: 'logo-brand', alt: "Desarrolladora A&L")
-    .cd-timeline-content
-      .title.is-5 Title of section 3
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-      %a.button.is-info.is-outlined.cd-read-more{:href => "#0"} Read more
-      %span.cd-date Jan 24
-
-  .cd-timeline-block
-    .cd-timeline-img
-      =image_tag("logotipos/sankiglobal.png", class: 'logo-brand', alt: "Desarrolladora A&L")
-    .cd-timeline-content
-      .title.is-5 Title of section 4
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-      %a.button.is-info.is-outlined.cd-read-more Read more
-      %span.cd-date Jan 18
-
-  .cd-timeline-block
-    .cd-timeline-img
-      =image_tag("logotipos/promologistics.png", class: 'logo-brand', alt: "Promologistics")
-    .cd-timeline-content
-      .title.is-5 Title of section 5
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-      %a.button.is-info.is-outlined.cd-read-more{:href => "#0"} Read more
-      %span.cd-date Jan 24
-
-  .cd-timeline-block
-    .cd-timeline-img
-      =image_tag("logotipos/gategourmet.png", class: 'logo-brand', alt: "Gategourmet")
-    .cd-timeline-content
-      .title.is-5 Title of section 6
-      %p
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?
-      %a.button.is-info.is-outlined.cd-read-more Read more
-      %span.cd-date Jan 18
-
-  .cd-timeline-block
-    .cd-timeline-img
-      =image_tag("luisosnet.png", border: 0, class: 'logo-brand', alt: "Luis Osnet")
+  - @timeline.each do |company|
+    .cd-timeline-block
+      .cd-timeline-img.cd-timeline-img
+        %img{:alt => "Description", :src => "#{company.brand_logo_url}"}
+      .cd-timeline-content
+        .title.is-5= company.title
+        %p= company.description
+        %a.button.is-info.is-outlined.cd-read-more{:href => "timelines/#{company.id}"} Read more
+        %span.cd-date= company.start_date.strftime("%b %Y") + ' - ' + company.end_date.strftime("%b %Y")
