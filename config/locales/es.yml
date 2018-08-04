@@ -1,7 +1,7 @@
 es:
   author_name: "Luis Osnet"
   owner_name: "Luis Osnet"
-  job: "Desarrollador Ruby on Rails"
+  job: "Programador backend"
   description: "Ruby on Rails developer trying to help people one code line at time."
   hello: "!Hola soy Luis Osnet¡"
   # navbar
@@ -17,6 +17,12 @@ es:
     buttons:
       share: Compartir
       resume: Descargar CV
+  # profile
+  profile:
+    work_experience: "Experiencia Laboral"
+    abilities: "Habilidades"
+
+
   # portfolio
   portfolio:
     title: "¡ME INTERESA TU FEEDBACK!"
@@ -37,6 +43,11 @@ es:
     instagram_user: "@LuisOsnet"
     youtube_user: "@LuisOsnet"
     url: "luisosnet.com"
+  # buttons
+  button:
+    read_more: Ver más
+    back: Regresar
+    send_message: Enviar
 
   mail_form:
     models:

@@ -139,6 +139,29 @@ namespace :companies do
       },
       start_date: Time.now,
       end_date: Time.now,
+      status: false
+    )
+
+    # RunaHr
+    Company.find_or_create_by(
+      brand_logo_url: 'https://runahr.com/wp-content/themes/runa-new/dist/img/runa-logo.png',
+      brand_url: 'https://runahr.com',
+      brand_contact: 'Gustavo Leon',
+      title: 'Runa',
+      position: 'Ruby on Rails Developer',
+      description: 'Busca y compra boletos para tus eventos favoritos. ¿Cual será tu próximo evento?¡No te lo pierdas, compra tus boletos!',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      activities: {
+        'title': [
+          'example glossary 1',
+          'example glossary 2',
+          'example glossary 3',
+          'example glossary 4',
+          'example glossary 5'
+        ]
+      },
+      start_date: Time.now,
+      end_date: Time.now,
       status: true
     )
   end

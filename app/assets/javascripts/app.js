@@ -40,7 +40,6 @@ $( document ).on('turbolinks:load', function() {
       $(window).scroll(function(event) {
           height = $(event.target).scrollTop();
           if (height > 250) {
-            console.log("re");
             scrollArrow.removeClass("scrollArrowActive");
           }   else {
             scrollArrow.addClass("scrollArrowActive");
@@ -67,4 +66,56 @@ $( document ).on('turbolinks:load', function() {
   // 		});
   // 	});
   // });
+
+
+  // Produces width of .barChart
+  // $(document).ready(function() {
+  //   $('.graph-bar').each(function() {
+  //      var dataWidth = $(this).data('value');
+  //      $(this).css("width", dataWidth + "%");
+  //   });
+  // });
+  //
+  // // Positioning of .bubbleChart
+  // $(document).ready(function() {
+  //   $('.chart-bubble').each(function() {
+  //     // Bubble Size
+  //     var bubbleSize = $(this).data('value');
+  //     $(this).css("width", function() {
+  //       return (bubbleSize * 10) + "px"
+  //     });
+  //     $(this).css("height", function() {
+  //       return (bubbleSize * 10) + "px"
+  //     });
+  //
+  //     // Bubble Position
+  //     var posX = $(this).data('x');
+  //     var posY = $(this).data('y');
+  //     $(this).css("left", function() {
+  //       return posX - (bubbleSize * 0.5) + "%"
+  //     });
+  //     $(this).css("bottom", function() {
+  //       return posY - (bubbleSize * 0.5) + "%"
+  //     });
+  //   });
+  // });
+  //
+  //
+
+
+
+  var donutEl = document.getElementById("donut").getContext("2d");
+  var donut = new Chart(donutEl).Doughnut(
+    data = {
+      datasets: [{
+          data: [10, 20, 30]
+      }],
+
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: [
+          'Red',
+          'Yellow',
+          'Blue'
+      ]
+  });
 });

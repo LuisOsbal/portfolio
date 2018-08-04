@@ -12,6 +12,7 @@
  *
  *= require_tree .
  *= require font-awesome
+ *= bulma-extensions
  *= require flag-icon
  *= require_self
  */

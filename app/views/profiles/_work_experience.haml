@@ -12,5 +12,5 @@
       .cd-timeline-content
         .title.is-5= company.title
         %p= company.description
-        %a.button.is-info.is-outlined.cd-read-more{:href => "companies/#{company.id}"} Read more
+        %a.button.is-info.is-outlined.cd-read-more{:href => "companies/#{company.id}"}= t('button.read_more')
         %span.cd-date= company.start_date.strftime("%b %Y") + ' - ' + company.end_date.strftime("%b %Y")

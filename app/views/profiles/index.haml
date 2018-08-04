@@ -6,7 +6,7 @@
       .columns.is-vcentered
         .column.is-5
           %figure.image.is-6by4
-            =image_tag("myself2.jpg", alt: "Luis Osnet")
+            =image_tag("myself.jpg", alt: "Luis Osnet")
         .column.is-6.is-offset-1
           %h1.title.is-2= t('hello')
           %h2.subtitle.is-4= t('job')
@@ -17,10 +17,6 @@
           %p Y bueno tiene algo de cierto, estudié la carrera de ingeniería en sistemas computacionales en el Tecnológico de Estudio Superiores de Ecatepec.
           %br
           %p A lo largo de mi trayectoria profesional he pasado por diferentes áreas de oportunidad como por ejemplo analista en soporte técnico,  analista en infraestructura, desarrollador de bases de datos, programador frontend, programador backend.
-          %br
-          %p.has-text-centered
-            %a.button.is-medium.is-info.is-outlined{:href => profiles_path}= t('button.read_more')
 
-= render partial: "work_experience"
--# = render partial: "articles"
-= render partial: "contact"
+= render :partial => 'abilities'
+-# = render :partial => 'work_experience'
